@@ -1,38 +1,103 @@
 /* src/styles.css */
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f7f1; /* Fondo suave y cálido */
+  color: #4e3629;  /* Color de texto café oscuro */
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+  background: linear-gradient(45deg, #6f4f37, #ffad60); /* Degradado cálido */
+  color: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff3e1; /* Color crema claro para el título */
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #fff3e1;
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Estilos del campo de búsqueda */
+header input {
+  margin-top: 15px;
+  padding: 10px;
+  width: 70%;
+  border-radius: 25px;
+  border: 2px solid #ffad60;
+  background-color: #fff3e1;
+  font-size: 1rem;
+  outline: none;
+}
+
+header input:focus {
+  border-color: #6f4f37;
+  box-shadow: 0 0 5px rgba(111, 79, 55, 0.7);
+}
+
+/* Estilos del footer */
+footer {
+  background-color: #6f4f37;  /* Color café oscuro */
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 1.1rem;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
   }
-  
-  .app-container {
-    margin: 0;
-    padding: 0;
+
+  header p {
+    font-size: 1rem;
   }
-  
-  .header {
-    background-color: #ff6347;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+
+  footer p {
+    font-size: 0.5rem;
   }
-  
-  .food-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+
+  header input {
+    width: 85%;
   }
-  
-  .food-card {
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-  }
-  
-  .food-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
+}
