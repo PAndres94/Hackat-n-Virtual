@@ -4,7 +4,7 @@ import React from 'react';
 function Header() {
   return (
     <header className="header">
-      <h1>Food Explorer</h1>
+      <h1>HOLA PEDRO</h1>
     </header>
   );
 }
