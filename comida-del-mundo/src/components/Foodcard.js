@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { fetchFoodData } from '../api/foodApi'; // Ajusta la ruta según tu proyecto
 
 const FoodCard = ({ mealName }) => {
-  const [foodData, setFoodData] = useState([]);
+  const [foodData, setFoodData] = useState([""]);
 
   useEffect(() => {
     const fetchData = async () => {

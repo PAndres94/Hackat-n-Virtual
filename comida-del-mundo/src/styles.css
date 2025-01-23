@@ -65,7 +65,7 @@ header input:focus {
 }
 
 /* Estilos del footer */
-footer {
+.footer {
   background-color: #6f4f37;  /* Color café oscuro */
   color: white;
   text-align: center;
@@ -100,4 +100,6 @@ footer p {
   header input {
     width: 85%;
   }
+
+
 }

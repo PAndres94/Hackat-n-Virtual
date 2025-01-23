@@ -4,6 +4,7 @@ import FoodCard from './components/Foodcard';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+
 const App = () => {
   const [mealName, setMealName] = useState(''); 
 
